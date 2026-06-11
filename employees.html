@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Employees</title>
+    <title>Employees</title>
 </head>
+
 <body>
 
-<h1>Employee Management</h1>
+    <h1>Employee Management</h1>
 
-<input type="text" id="name" placeholder="Employee Name">
-<input type="text" id="position" placeholder="Position">
-<input type="number" id="salary" placeholder="Salary">
+    <a href="dashboard.html">← Dashboard</a>
 
-<button id="saveBtn">
-Save Employee
-</button>
+    <hr>
 
-<script type="module" src="js/auth.js"></script>
+    <input type="text" id="name" placeholder="Employee Name">
+
+    <input type="text" id="position" placeholder="Position">
+
+    <input type="number" id="salary" placeholder="Salary">
+
+    <button id="saveBtn">
+        Save Employee
+    </button>
+
+    <hr>
+
+    <h2>Employee List</h2>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+
+        <tbody id="employeeList">
+
+        </tbody>
+
+    </table>
+
+    <script type="module" src="js/auth.js"></script>
 
 </body>
 </html>
